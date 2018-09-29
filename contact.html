@@ -1,64 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Stylesheet link-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Contact</title>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <!--Start of Navigation Bar --> 
-    <div class="nav">
-            <div class="name">
-                  <div>John Doe</div> 
-                </div>
-
-                <div class ="nav-links">
-                        <ul>
-                            <li><a href="index.html">About</a><span class="divider">|</span></li>
-                            <li><a href="portfolio.html">Portfolio</a><span class="divider">|</span></li>
-                            <li><a href="contact.html">Contact</a></li>
-                             
-                            </ul>
-                </div>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">John Doe</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <!--End of Navigation Bar-->
-    
+  </header>
 
-        <!-- Start of Wrapper-->
-        <div class="wrapper-contact">
-            <h1 class ="wrapper-heading">Contact</h1>
-            <hr>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-            <div class = "contact-form">
-            <form>
-                <table>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-          <tr> <td> <label for="name">Name:</label></td></tr>
-          <tr><td><input type = "text" size="145" placeholder="Name"></td></tr>  
+    </section>
 
-          <tr> <td> <label for="email">Email:</label></td></tr>
-          <tr><td><input type = "email" size="145"  placeholder="Enter your Email address" ></td></tr>
-          <tr> <td> <label for="Message">Message:</label></td></tr>
-          <tr><td> <textarea placeholder="Enter your Message" rows="10" cols="131"></textarea></td></tr>    
-          <tr><td><button>Submit</button></td></tr>   
+  </div>
 
-             </table>
-        </form>
+  <footer>
+    <div class="container">
+      Copyright &copy; 
     </div>
-        </div>
-        <!--End of Wrapper-->
-
-        <!--Box above the footer Tag-->
-        <div class="box">
-
-        </div>
-        <!--Footer Element-->
-        <footer>
-       Copyright &copy;
-   </footer>
+  </footer>
 </body>
+
 </html>
