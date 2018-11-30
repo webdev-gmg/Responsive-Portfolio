@@ -29,10 +29,20 @@ else {
   console.log('Try Again');
 }
 
+function doWhatItSays() {
+  fs.readFile("random.txt", "utf8", function (error, data) {
+    spotify(data)
+  })
+}
+
+
 function movieDisplay(movieName) {
 
   // Then run a request with axios to the OMDB API with the movie specified
-
+if (!movieName) {
+    movieName = "Mr Nobody"
+  }
+  
   axios.get("http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy")
     .then(
       function (response) {
